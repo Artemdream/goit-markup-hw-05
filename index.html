@@ -33,17 +33,13 @@
                         
                         <a class="contact-link" href="mailto:info@devstudio.com">
                             <svg class="header-icon" width="16" height="12">
-                                <use href="./images/icons.svg#icon-mail"></use>
-                            </svg>
-                             info@devstudio.com</a>
+                                <use href="./images/icons.svg#icon-mail"></use></svg>info@devstudio.com</a>
                         </li>
                     <li class="contact-item">
                         
                         <a class="contact-link" href="tel:+380961111111">
                             <svg class="header-icon" width="10" height="16">
-                                <use href="./images/icons.svg#icon-phone"></use>
-                            </svg>
-                            +38 096 111 11 11</a>
+                                <use href="./images/icons.svg#icon-phone"></use></svg>+38 096 111 11 11</a>
                     </li>
                 </ul>
         </div>
@@ -56,7 +52,7 @@
         <section class="section hero">
             <div class="container">
                 <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                <button class="button" type="button">замовити послугу</button>
+                <button class="button" data-modal-open type="button" >замовити послугу</button>
             </div>
         </section>
 
@@ -112,9 +108,26 @@
             <div class="container">
                 <h2 class="section-title">Чим ми займаємося</h2>
                 <ul class="our-work">
-                    <li><img src="./images/keyboard.jpg" alt="друкує на клавіатурі" width="370" height="294"></li>
-                    <li><img src="./images/phone.jpg" alt="тримає телефон в руках" width="370" height="294"></li>
-                    <li><img src="./images/tablet.jpg" alt="тримає планшет в руках" width="370" height="294"></li>
+                    
+                    <li> 
+                        <div class="our-work-item">
+                        <img src="./images/keyboard.jpg" alt="друкує на клавіатурі" 
+                         width="370" height="294">
+                        <p class="label">Десктопні додатки</p></div>
+                    </li>
+                    <li>
+                        <div class="our-work-item">
+                        <img src="./images/phone.jpg" alt="тримає телефон в руках" 
+                         width="370" height="294">
+                        <p class="label">Мобільні додатки</p></div>
+                </li>
+                   <li>
+                        <div class="our-work-item"> 
+                        <img src="./images/tablet.jpg" alt="тримає планшет в руках" 
+                         width="370" height="294">
+                        <p class="label">Дизайнерські рішення</p></div>
+                </li>
+                
                 </ul>
             </div>
         </section>
@@ -388,6 +401,17 @@
         </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal  >
+        <div class="modal">
+            <button type="button" data-modal-close class="modal-btn">
+                <svg class="modal-close-icon" width="11" height="11">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+    
+            </button>
+        </div>
+    </div>
+    <script src="./modal.js"></script>
 </body>
 
 </html>
